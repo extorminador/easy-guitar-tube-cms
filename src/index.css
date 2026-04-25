@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Be Vietnam Pro", sans-serif;
+  --font-serif: "Noto Serif", serif;
+
+  /* Brand Colors from provided Design System */
+  --color-primary: #ffb4aa;
+  --color-secondary: #EE2A24; /* Brand Red */
+  --color-background: #121414;
+  --color-surface: #121414;
+  --color-surface-container: #1e2020;
+  --color-surface-container-high: #282a2b;
+  --color-on-surface: #e2e2e2;
+  --color-on-surface-variant: #a0a0a0;
+  --color-outline: #5d3f3b;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+}
